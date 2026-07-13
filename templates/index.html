@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Deployment Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Flask Deployment Dashboard</h1>
+
+    <p class="subtitle">
+        Production-ready deployment using Ubuntu 24.04, Nginx, Gunicorn, and Flask.
+    </p>
+
+    <div class="status">
+        <span class="online"></span>
+        Service Status: ONLINE
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Operating System</h2>
+            <p>Ubuntu 24.04 LTS</p>
+        </div>
+
+        <div class="card">
+            <h2>Web Server</h2>
+            <p>Nginx Reverse Proxy</p>
+        </div>
+
+        <div class="card">
+            <h2>Application Server</h2>
+            <p>Gunicorn</p>
+        </div>
+
+        <div class="card">
+            <h2>Framework</h2>
+            <p>Flask</p>
+        </div>
+
+        <div class="card">
+            <h2>Process Manager</h2>
+            <p>systemd Service</p>
+        </div>
+
+        <div class="card">
+            <h2>Environment</h2>
+            <p>Python Virtual Environment</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Built by Ahmed Emad • Ubuntu 24.04 • Nginx • Gunicorn • Flask
+    </footer>
+
+</div>
+
+</body>
+</html>
